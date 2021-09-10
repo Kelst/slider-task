@@ -11,15 +11,15 @@ import {rootReducer} from './redux/rootReducer'
 import {sagaWatcher} from './redux/sagas'
 import createSagaMiddleware from 'redux-saga'
 
-const saga = createSagaMiddleware()
+//const saga = createSagaMiddleware()
 
 const store = createStore(rootReducer, compose(
   applyMiddleware(
-    thunk, saga
+    thunk
   ),
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 ))
-saga.run(sagaWatcher)
+//saga.run(sagaWatcher)
 ReactDOM.render(
   <Provider store={store}>
     <App />

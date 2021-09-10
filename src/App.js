@@ -11,7 +11,7 @@ import {
 import About from './components/About';
 import Contact from './components/Contact';
 import {useDispatch, useSelector} from 'react-redux'
-  import {fetchImage,changeSwitch} from './redux/actions'
+  import {fetchImage,changeSwitch, fetchGallery} from './redux/actions'
 function App() {
  
  const dispatch = useDispatch()
@@ -24,7 +24,7 @@ function App() {
     
 // }, [])
 useEffect(() => {
-  dispatch(fetchImage())
+  dispatch(fetchGallery())
     
 }, [])
   return (
@@ -33,13 +33,13 @@ useEffect(() => {
      <Header />
      
      <Switch>
-     <Route exact path="/">
+     <Route exact path="/slider-task/">
                  <Slider />
           </Route>
-          <Route path="/about">
+          <Route path="/slider-task/about">
                  <About/>
           </Route>
-          <Route path="/contact">
+          <Route path="/slider-task/contact">
                  <Contact/>
           </Route>
      </Switch>

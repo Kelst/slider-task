@@ -16,9 +16,9 @@ export default function Header() {
         <header>
             <div className="wrapper">
             <ul className="nav">
-            <li className="nav__link" ><Link  to="/">Home</Link></li>
-            <li className="nav__link" ><Link to="/about">About</Link></li>
-            <li className="nav__link" ><Link to="contact">Contact</Link></li>
+            <li className="nav__link" ><Link  to="/slider-task/">Home</Link></li>
+            <li className="nav__link" ><Link to="/slider-task/about">About</Link></li>
+            <li className="nav__link" ><Link to="/slider-task/contact">Contact</Link></li>
             <li className="nav__link" > <div className={toggle?"switch-btn":"switch-btn switch-on"} onClick={()=>switchToggle()} ></div></li>
             
         </ul>

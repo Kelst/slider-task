@@ -13,7 +13,7 @@ function* sagaWorker() {
    
 }
 async function fetchImages() {
-  const response = await fetch('https://mocki.io/v1/fff9bfd4-a04c-4321-85e2-f6f3fbb4a9d3')
+  const response = await fetch('https://my-json-server.typicode.com/Kelst/server/Photos')
 
   return await response.json()
 }
