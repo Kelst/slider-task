@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import GridImage from './GridImage';
 import { useSelector} from 'react-redux'
 
-export default function Slider({slider}) {
+export default function Slider() {
     const list = useSelector(state => state.galleryaArrays.imageLists)
     const [current,setCurrent]=useState(0);
     const length=list.length;

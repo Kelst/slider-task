@@ -11,14 +11,14 @@ import {rootReducer} from './redux/rootReducer'
 import {sagaWatcher} from './redux/sagas'
 import createSagaMiddleware from 'redux-saga'
 
-//const saga = createSagaMiddleware()
+const saga = createSagaMiddleware()
 
 const store = createStore(rootReducer, 
   applyMiddleware(
-    thunk
+    thunk,saga
   )
 )
-//saga.run(sagaWatcher)
+saga.run(sagaWatcher)
 ReactDOM.render(
   <Provider store={store}>
     <App />

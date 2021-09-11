@@ -1,7 +1,8 @@
-import {CHANGE_SWITCH, FETCH_GALLERY} from './types'
+import {CHANGE_SWITCH, CHANGE_VIEW, FETCH_GALLERY} from './types'
 
 const initialState = {
   toggle:true,
+  toggleView:true,
   imageLists: [],
   
 }
@@ -13,6 +14,7 @@ export const galleryReducer = (state = initialState, action) => {
       return { ...state, imageLists: action.payload }
       case CHANGE_SWITCH:
         return {...state,toggle:!state.toggle}
+        case CHANGE_VIEW:return {...state,toggleView:!state.toggleView}
     default: return state
   }
 }

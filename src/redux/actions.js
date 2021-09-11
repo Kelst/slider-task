@@ -1,4 +1,4 @@
-import { CHANGE_SWITCH, FETCH_GALLERY, REQUEST_GALLERY } from "./types";
+import { CHANGE_SWITCH, CHANGE_VIEW, FETCH_GALLERY, REQUEST_GALLERY } from "./types";
 
 export function fetchImage() {
     return {
@@ -10,6 +10,11 @@ export function fetchImage() {
           type:CHANGE_SWITCH
       }
   }
+  export function changeView(){
+    return {
+        type:CHANGE_VIEW
+    }
+}
 
   export function fetchGallery(){
     return async dispatch=>{
