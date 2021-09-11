@@ -13,6 +13,7 @@ import Contact from './components/Contact';
 import {useDispatch, useSelector} from 'react-redux'
   import {fetchImage,changeSwitch, fetchGallery} from './redux/actions'
 function App() {
+<<<<<<< HEAD
  
  const dispatch = useDispatch()
 
@@ -25,6 +26,18 @@ function App() {
 // }, [])
 useEffect(() => {
   dispatch(fetchImage())
+=======
+ const [toggle, setToggle] = useState(true)
+ const switchToggle=()=>{
+  document.body.classList.toggle("dark")
+   setToggle(!toggle);
+ }
+  const [SliderData,setList]=useState([]);
+  useEffect(() => {
+ fetch('https://my-json-server.typicode.com/Kelst/server/Photos')
+.then(response => response.json())
+.then(json => setList([...json]))
+>>>>>>> master
     
 }, [])
   return (
