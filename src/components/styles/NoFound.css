@@ -1,0 +1,11 @@
+.found{
+    position:absolute;
+    top:90%;
+    left:40%;
+    text-align:center;
+    font-weight:700;
+    font-size:35px;
+    text-transform: uppercase;
+    text-shadow: 0;
+
+}

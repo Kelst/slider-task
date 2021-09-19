@@ -1,0 +1,17 @@
+
+    .tool{
+        margin-top:0px;
+        display:flex;
+        justify-content:space-between;
+        align-items: center;
+       
+    }
+    .toolNav{
+    margin: 0 auto;
+    height: 40px;
+    width:756px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    }

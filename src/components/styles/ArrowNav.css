@@ -1,0 +1,150 @@
+.arrow-hover-left {
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    margin: 0px;
+}
+.arrow-hover-left div {
+    position: relative;
+    background-color: #337AB7;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    display: block;
+}
+.arrow-hover-left div::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: 11px;
+    background-color: #9fb1c0;;
+    transform: rotate(45deg);
+}
+.arrow-hover-left div::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: -11px;
+    background-color: #939394;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.arrow-hover-left:hover {
+    animation: arrow-hover 1s linear infinite;
+}
+@keyframes arrow-hover {
+    0% {
+        right:0;
+    }
+    50% {
+        right:10px;
+    }
+    100% {
+        right:0;
+    }
+}
+.arrow {
+
+display: flex;
+padding:0;
+margin-top: 38px;
+justify-content: start;
+align-items:center;
+height: 40px;
+}
+.arrow-hover-right {
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 50px;
+    margin: 0px;
+}
+.arrow-hover-right div {
+    position: relative;
+    background-color: #337AB7;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    display: block;
+}
+.arrow-hover-right div::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: 11px;
+    background-color: #9fb1c0;;
+    transform: rotate(135deg);
+}
+.arrow-hover-right div::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: -11px;
+    background-color: #939394;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-135deg);
+}
+.arrow-hover-right:hover {
+    animation: arrow-hover-right 1s linear infinite;
+}
+@keyframes arrow-hover-right {
+    0% {
+        left:0;
+    }
+    50% {
+        left:10px;
+    }
+    100% {
+        left:0;
+    }
+} 
+/* .arrow-hover-right {
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    margin: 20px;
+}
+.arrow-hover-right div {
+    position: relative;
+    background-color: #c7d7e4;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    left:0;
+    display: block;
+}
+.arrow-hover-right div::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: -11px;
+    right: -8px;
+    background-color: #9fb1c0;
+    transform: rotate(45deg);
+}
+.arrow-hover-right div::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 10px;
+    top: 11px;
+    right: -8px;
+    background-color: #939394;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
+.arrow-hover-right:hover {
+    animation: arrow-hover-right 1s linear infinite;
+}
+@keyframes arrow-hover-right {
+    0% {
+        left:0;
+    }
+    50% {
+        left:10px;
+    }
+    100% {
+        left:0;
+    }
+} */
